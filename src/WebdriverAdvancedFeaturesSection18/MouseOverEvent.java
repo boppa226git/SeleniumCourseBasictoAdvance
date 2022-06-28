@@ -32,7 +32,7 @@ public class MouseOverEvent {
 		//WebDriverWait wait = new WebDriverWait(driver,10);
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 	
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"rso\"]/div[1]/div/div/div/div/div/div/div[1]/a/div/cite"))).click();
+	//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"rso\"]/div[1]/div/div/div/div/div/div/div[1]/a/div/cite"))).click();
 	//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div[3]/form/div[2]/div/div[2]/div[2]/div/center/input[1]"))).click();
 		
 		//driver.findElement(By.xpath("/html/body/div[6]/div[3]/div[10]/div[1]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div/div/div/div/div[1]/a/h3")).click();

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+<listeners>
+		<listener class-name="TestNGcustomListeners.listeners"></listener>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+		
+	</listeners>
+
+  <test  name="Registration">
+    <classes>
+      
+      <class name="TestNGTestCases.Testcase1"/>
+     
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+  <test  name="Login">
+    <classes>
+     
+      <class name="TestNGTestCases.Testcase2"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test  name="forgot password">
+    <classes>
+      <class name="TestNGTestCases.Tetscas3"/>
+      
+    </classes>
+    
+        
+    
+  </test> <!-- Test -->
+  
+  <test  name="Relogin">
+    <classes>
+     
+      <class name="TestNGTestCases.BasicTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+  
+  
+</suite> <!-- Suite -->

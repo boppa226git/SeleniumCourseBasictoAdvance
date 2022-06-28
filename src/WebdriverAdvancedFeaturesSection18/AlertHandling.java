@@ -28,10 +28,10 @@ public class AlertHandling {
 		//alert.accept();
 		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+		//Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 		
-		System.out.println(alert.getText());
-		alert.accept();
+		//System.out.println(alert.getText());
+		//alert.accept();
 		
 
 	}
