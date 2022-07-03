@@ -2,10 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-<parameter name="br" value="chrome"/>
 
 
-  <test  name="GridTest">
+
+  <test  name="firefox-test">
+  <parameter name="br" value="firefox"/>
     <classes>
       
       <class name="grid.Gridtest"/>
@@ -13,6 +14,15 @@
     </classes>
   </test> <!-- Test -->
   
+  
+  <test  name="chrome-test">
+  <parameter name="br" value="chrome"/>
+    <classes>
+      
+      <class name="grid.Gridtest"/>
+     
+    </classes>
+  </test> <!-- Test -->
   
   
   

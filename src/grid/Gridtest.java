@@ -18,7 +18,7 @@ public class Gridtest {
 		@Test
 		public void geturl(String url)
 		{
-			System.out.println("url is "+url);
+			System.out.println("browser is "+url);
 		}
 	 
 	 
@@ -33,33 +33,39 @@ public class Gridtest {
 		public void dis(String br) throws MalformedURLException
 	
 	{
-		 
-		RemoteWebDriver driver=null;
-		//DesiredCapabilities cap=DesiredCapabilities.firefox();
-		
-		
-		
-		
-		//nodeUrl = "https://192.168.0.178:4444/wd/hub";
-		nodeUrl="http://localhost:4444/wd/hub";
-		 //DesiredCapabilities cap = DesiredCapabilities.chrome();
-		DesiredCapabilities cap = new DesiredCapabilities();
-		System.out.println("====");
+		 RemoteWebDriver driver=null;
+		 DesiredCapabilities cap=null;
+			nodeUrl="http://localhost:4444/wd/hub";
+			
+	
+		 if(br.equalsIgnoreCase("chrome"))
+		 {
+			 System.out.println("browse type is chrome ----> :"+br);
+		// DesiredCapabilities
+			 cap = DesiredCapabilities.chrome();
+	// cap = new DesiredCapabilities();
 		 cap.setBrowserName(br);
 		 cap.setPlatform(Platform.WINDOWS);
+		 //driver = new RemoteWebDriver(new URL(nodeUrl), cap);
+		 }
+		 if(br.equalsIgnoreCase("firefox"))
+		 {System.out.println("browse type is firefox ----> :"+br);
+			 //DesiredCapabilities cap = DesiredCapabilities.firefox();
+				 //cap = new DesiredCapabilities();
+				 //cap.setBrowserName("firefox");
+				// cap.setPlatform(Platform.WINDOWS);
+				 cap = DesiredCapabilities.firefox();
+			        cap.setBrowserName("firefox"); 
+			        cap.setPlatform(Platform.ANY);
+				 
+				
+				// driver = new RemoteWebDriver(new URL(nodeUrl), cap);
+		 }
+		 
 		 driver = new RemoteWebDriver(new URL(nodeUrl), cap);
-		//cap.setBrowserName("firefox");
-		//cap.setPlatform(Platform.XP);
-		//RemoteWebDriver driver=new RemoteWebDriver(new    URL("http://192.168.0.178:4444/wb/hub"), cap);
-        driver.navigate().to("http://gmail.com");
-        //driver.findElement(By.xpath("//input[@id='Email']")) .sendKeys("username");
-        //driver.findElement(By.xpath("//input[@id='Passwd']")) .sendKeys("password");
-        driver.close();
+		 driver.navigate().to("http://gmail.com");
+         driver.close();
 	}
-	@Test
-	public void emp()
-	{
-		System.out.println("second method");
-	}
+	
 
 }
