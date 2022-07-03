@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-28T15:22:59 IST" name="Suite" finished-at="2022-06-28T15:22:59 IST" duration-ms="103">
+  <suite started-at="2022-07-03T21:43:15 IST" name="Suite" finished-at="2022-07-03T21:43:42 IST" duration-ms="26697">
     <groups>
     </groups>
-    <test started-at="2022-06-28T15:22:59 IST" name="Registration" finished-at="2022-06-28T15:22:59 IST" duration-ms="103">
-      <class name="TestNGParameterizationthroughxmlfile.TestParametersFromXML">
-        <test-method signature="geturl(java.lang.String)[pri:0, instance:TestNGParameterizationthroughxmlfile.TestParametersFromXML@1da2cb77]" started-at="2022-06-28T15:22:59 IST" name="geturl" finished-at="2022-06-28T15:22:59 IST" duration-ms="13" status="PASS">
+    <test started-at="2022-07-03T21:43:15 IST" name="GridTest" finished-at="2022-07-03T21:43:42 IST" duration-ms="26697">
+      <class name="grid.Gridtest">
+        <test-method signature="dis(java.lang.String)[pri:0, instance:grid.Gridtest@68c9133c]" started-at="2022-07-03T21:43:15 IST" name="dis" finished-at="2022-07-03T21:43:42 IST" duration-ms="26601" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[www.amazon.in]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dis -->
+        <test-method signature="emp()[pri:0, instance:grid.Gridtest@68c9133c]" started-at="2022-07-03T21:43:42 IST" name="emp" finished-at="2022-07-03T21:43:42 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emp -->
+        <test-method signature="geturl(java.lang.String)[pri:0, instance:grid.Gridtest@68c9133c]" started-at="2022-07-03T21:43:42 IST" name="geturl" finished-at="2022-07-03T21:43:42 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- geturl -->
-      </class> <!-- TestNGParameterizationthroughxmlfile.TestParametersFromXML -->
-    </test> <!-- Registration -->
+      </class> <!-- grid.Gridtest -->
+    </test> <!-- GridTest -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGParameterizationthroughxmlfile.TestParametersFromXML">
+      <class name="grid.Gridtest">
         <methods>
+          <include name="dis"/>
           <include name="geturl"/>
         </methods>
-      </class> <!-- TestNGParameterizationthroughxmlfile.TestParametersFromXML -->
+      </class> <!-- grid.Gridtest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
